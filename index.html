@@ -1,0 +1,39 @@
+---
+layout: default
+title: "Jekyll Golden Layout"
+description: blog
+---
+<h1 class="page-title">Blog</h1>
+{% for post in paginator.posts %}
+<article class="posts">
+  <header>
+    <h2><a class="post-link"
+           href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>
+      {{ post.date | date: "%b %-d, %Y" }}
+    </time>
+  </header>
+  {{ post.content }}
+
+</article>
+{% endfor %}
+
+<div>
+  <ul class="pagination">
+    {% if paginator.next_page %}
+    <li><a href="{{ site.baseurl }}/page{{ paginator.next_page }}">Older</a></li>
+    {% else %}
+    <li><span class="disabled">Older</span></li>
+    {% endif %}
+    <a href="{{ site.baseurl }}/archives">Archives</a>
+    {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+    <li><a href="{{ site.baseurl }}/">Newer</a></li>
+    {% else %}
+    <li><a href="{{ site.baseurl }}/page{{ paginator.previous_page }}">Newer</a></li>
+    {% endif %}
+    {% else %}
+    <li><span class="disabled">Newer</span></li>
+    {% endif %}
+  </ul>
+</div>

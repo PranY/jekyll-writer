@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article class="posts">
+  <header>
+    <h1>{{ page.title }}</h1>
+
+    <time datetime="{{ page.date | datetime | date_to_xmlschema }}"
+          pubdate>{{ page.date | date: "%b %-d, %Y" }}
+    </time>
+    <p class="readtime">Time to read is: {{ content | reading_time_as_s }}</p>
+  </header>
+  <div>
+    {{ content }}
+    <footer>
+      <p class="meta">
+      <div class="categories">Filed under - {{ page.categories | category_links }}</div>
+      </p>
+    </footer>
+  </div>
+</article>

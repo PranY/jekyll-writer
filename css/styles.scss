@@ -1,0 +1,450 @@
+---
+
+---
+/*  Imports */
+@import "normalize";
+@import "syntax";
+@import "settings";
+@import "flex";
+
+
+/*  Defaults  */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+html {
+  font-size: 100%;
+  line-height: $base-line-height;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: 1em;
+  font-weight: 400;
+  color: $body-font-color;
+  margin: 0 auto;
+  max-width: 1290px;
+  width: 96%;
+}
+
+body p {
+  margin: 0 0 1.618em 0;
+}
+
+.readtime {
+  font-style: italic;
+  margin: 0 0 1em .5em;
+}
+
+h1, h2, h3, h4, h5, h6,
+.navigation,
+.pagination {
+  font-family: $header-font-family;
+  font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: $header-line-height;
+  margin: 1em 0;
+}
+
+h1 {
+  font-size: 2.6em;
+}
+h2 {
+  font-size: 1.9em;
+}
+h3 {
+  font-size: 1.6em;
+}
+h4 {
+  font-size: 1.4em;
+}
+h5 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+h1.title {
+  background: transparent url(images/gold-heart-sm.png) no-repeat left;
+  margin: 8px 0 0 0;
+  padding-left: 50px;
+
+  a {
+    color: $site-title-color;
+    text-decoration: none;
+  }
+}
+
+h1.page-title {
+  color: $page-title-color;
+  margin-top: 1.15em;
+}
+
+article h1 {
+  color: $article-title-color;
+}
+
+article.archive {
+  padding-left: 20px;
+}
+
+.archive time,
+.categories time,
+.posts time {
+  display: inline-block;
+  padding-bottom: .6em;
+  text-transform: uppercase;
+}
+
+a {
+  &:link,
+  &:visited {
+    color: $content-link-color;
+    text-decoration: none;
+  }
+  &:focus,
+  &:hover {
+    color: $hover-color;
+    text-decoration: underline;
+  }
+  &:active {
+    color: $active-color;
+  }
+}
+
+.content a,
+.footer a {
+  padding: .5em 0;
+}
+
+a {
+  &.post-link {
+    padding: .3em 0;
+    text-decoration: none;
+  }
+  &:link.post-link,
+  &:visited.post-link {
+    color: $link-color;
+  }
+  &:focus.post-link,
+  &:hover.post-link {
+    color: $hover-color;
+  }
+  &:active.post-link {
+    color: $active-color;
+  }
+}
+
+.footer-container,
+.header-container,
+.main-container {
+  background-color: $body-bg;
+}
+
+.header-container {
+  border-bottom: none;
+}
+
+.navigation {
+  font-size: 1.2em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include flexbox;
+  @include flex-direction(column);
+  @include justify-content();
+
+  li {
+    border-bottom: lightgray solid 1px;
+  }
+  a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+
+    &:link,
+    &:visited {
+      color: $link-color;
+    }
+    &:focus,
+    &:hover {
+      color: $hover-color;
+    }
+    &:active {
+      color: $active-color;
+    }
+    &.active {
+      color: $nav-link-active;
+      text-shadow: $nav-link-active-shad;
+    }
+  }
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.disable-pointer-events {
+  pointer-events: none !important;
+}
+
+.nav-toggle {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 56px;
+  height: 50px;
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  z-index: 100;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: transparent url(images/toggle.png) no-repeat center;
+}
+
+article.posts {
+  border-bottom: $border-color solid 1px;
+  margin-bottom: 2.618em;
+  padding-bottom: 0;
+}
+
+.pagination {
+  font-size: 1.125em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include flexbox;
+  @include flex-direction();
+  @include justify-content(space-between);
+
+  li span.disabled {
+    color: scale-color($link-color, $lightness: 60%);
+    display: block;
+    padding: .8em 1em;
+    text-decoration: none;
+  }
+  a {
+    display: block;
+    padding: .8em 1em;
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+      color: $link-color;
+    }
+    &:focus,
+    &:hover {
+      color: $hover-color;
+    }
+    &:active {
+      color: $active-color;
+    }
+  }
+}
+
+
+aside {
+  border-top: $border-color solid 1px;
+  padding-bottom: 10px;
+
+  h2 {
+    color: $aside-title-color;
+  }
+  ul {
+    list-style: none;
+    margin-left: 22px;
+    margin-top: -20px;
+    padding-left: 0;
+  }
+  li {
+    font-family: $header-font-family;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  a {
+    display: block;
+    padding: .737em 0;
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+      color: $link-color;
+    }
+    &:focus,
+    &:hover {
+      color: $hover-color;
+      text-decoration: underline;
+    }
+    &:active {
+      color: $active-color;
+    }
+  }
+}
+
+/*  Footer  */
+.footer {
+  border-top: $border-color solid 1px;
+  margin-top: 16px;
+  padding: 16px 0 16px 0;
+  text-align: center;
+
+  .rss-subscribe {
+    margin-left: 20px;
+  }
+}
+
+/* Category List */
+@import "category_list";
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 36em) {
+  .navigation {
+    @include flex-direction();
+    @include justify-content(space-around);
+
+    li {
+      border-bottom: none;
+    }
+    a {
+      padding: .6em 1em;
+
+      &:link,
+      &:visited {
+        color: $link-color;
+        text-decoration: none;
+      }
+      &:focus,
+      &:hover {
+        color: $hover-color;
+      }
+      &:active {
+        color: $active-color;
+      }
+      &.active {
+        color: $nav-link-active;
+      }
+    }
+  }
+
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+
+  h1.title {
+    background: transparent url(images/gold-heart.png) no-repeat left;
+    margin-bottom: 10px;
+    padding-left: 70px;
+  }
+}
+
+
+@media screen and (min-width: 44em) {
+  body {
+    font-size: 1.25em;
+  }
+
+  h1.page-title {
+    color: $page-title-color;
+    margin-top: .6em;
+  }
+  article h1 {
+    color: $article-title-color;
+    margin-top: 1.25em;
+  }
+
+  .header {
+    margin-top: 16px;
+  }
+
+  .navigation a {
+    padding: .6em 2em;
+  }
+
+  .navigation,
+  .pagination {
+    font-size: 1.04em;
+  }
+
+  .content {
+    float: left;
+    border-right: #ddd dotted 1px;
+    padding: 0 20px 20px 0;
+    width: 62%;
+  }
+
+  aside {
+    border-top: none;
+    float: left;
+    padding: 0 10px 0 20px;
+    width: 38%;
+  }
+  aside section:first-child {
+    margin-top: 40px;
+  }
+  aside li {
+    font-size: 1em;
+  }
+
+  .footer {
+    border-top: none;
+  }
+}
+
+@media screen and (min-width: 62em) {
+
+  body {
+    width: 98%;
+  }
+
+  .navigation {
+    @include justify-content(flex-end);
+  }
+
+  .content {
+    float: left;
+    margin-left: 19%;
+    width: 51%;
+  }
+
+  aside {
+    float: left;
+    width: 30%;
+  }
+}

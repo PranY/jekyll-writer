@@ -1,0 +1,23 @@
+name: Jekyll Golden
+description: Jekyll with Golden Ratio Layout
+author: mjohnq3
+title: Jekyll Golden
+
+url: mjohnq3.github.io/jekyll-golden
+baseurl: /jekyll-golden
+
+gems:
+  - jekyll-time-to-read
+  - jekyll-sitemap
+
+sass:
+  sass_dir: _sass
+  style: :expanded
+
+markdown: rdiscount
+permalink: /blog/:year/:month/:day/:title/
+highlighter: pygments
+
+paginate: 3
+
+
