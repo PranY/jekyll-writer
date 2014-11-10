@@ -1,10 +1,10 @@
-name: Jekyll Golden
-description: Jekyll with Golden Ratio Layout
+name: Jekyll Writer
+description: Simple blogging site
 author: mjohnq3
-title: Jekyll Golden
+title: Jekyll Writer
 
-url: mjohnq3.github.io/jekyll-golden
-baseurl: /jekyll-golden
+url: mjohnq3.github.io/jekyll-writer
+baseurl: /jekyll-writer
 
 gems:
   - jekyll-time-to-read

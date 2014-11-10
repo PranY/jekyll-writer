@@ -1,5 +1,19 @@
-<aside role="complementary">
-  {% include asides/categories.html %}
-  {% include asides/recent_posts.html %}
-  {% include asides/about.html %}
-</aside>
+<section class="col-1">
+  <h2>Recent</h2>
+  <ul>
+    {% for post in site.posts limit: 5 %}
+    <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="col-2">
+  <h2>About</h2>
+  <p>Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.
+    Maecenas mattis.</p>
+
+    <p>Sed convallis tristique sem. Proin ut ligula vel nunc egestas
+    porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.
+    Fusce ac turpis quis ligula lacinia aliquet.
+  </p>
+</section>

@@ -32,11 +32,12 @@ html {
 
 body {
   font-family: $base-font-family;
-  font-size: 1em;
+  font-size: 1.15em;
   font-weight: 400;
   color: $body-font-color;
+  background-color: $body-bg;
   margin: 0 auto;
-  max-width: 1290px;
+  max-width: 760px;
   width: 96%;
 }
 
@@ -271,44 +272,6 @@ article.posts {
 }
 
 
-aside {
-  border-top: $border-color solid 1px;
-  padding-bottom: 10px;
-
-  h2 {
-    color: $aside-title-color;
-  }
-  ul {
-    list-style: none;
-    margin-left: 22px;
-    margin-top: -20px;
-    padding-left: 0;
-  }
-  li {
-    font-family: $header-font-family;
-    font-size: 1.2em;
-    font-weight: 500;
-  }
-  a {
-    display: block;
-    padding: .737em 0;
-    text-decoration: none;
-
-    &:link,
-    &:visited {
-      color: $link-color;
-    }
-    &:focus,
-    &:hover {
-      color: $hover-color;
-      text-decoration: underline;
-    }
-    &:active {
-      color: $active-color;
-    }
-  }
-}
-
 /*  Footer  */
 .footer {
   border-top: $border-color solid 1px;
@@ -402,49 +365,16 @@ aside {
     font-size: 1.04em;
   }
 
-  .content {
-    float: left;
-    border-right: #ddd dotted 1px;
-    padding: 0 20px 20px 0;
-    width: 62%;
-  }
-
-  aside {
-    border-top: none;
-    float: left;
-    padding: 0 10px 0 20px;
-    width: 38%;
-  }
-  aside section:first-child {
-    margin-top: 40px;
-  }
-  aside li {
-    font-size: 1em;
-  }
-
   .footer {
     border-top: none;
   }
+
+  section.col-1,
+  section.col-2 {
+    float: left;
+    padding: 0 10px;
+    width: 50%;
+  }
+
 }
 
-@media screen and (min-width: 62em) {
-
-  body {
-    width: 98%;
-  }
-
-  .navigation {
-    @include justify-content(flex-end);
-  }
-
-  .content {
-    float: left;
-    margin-left: 19%;
-    width: 51%;
-  }
-
-  aside {
-    float: left;
-    width: 30%;
-  }
-}
