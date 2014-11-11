@@ -37,7 +37,7 @@ body {
   color: $body-font-color;
   background-color: $body-bg;
   margin: 0 auto;
-  max-width: 760px;
+  max-width: 750px;
   width: 96%;
 }
 
@@ -80,7 +80,8 @@ h5 {
 }
 
 h1.title {
-  background: transparent url(images/gold-heart-sm.png) no-repeat left;
+  background: transparent url(images/Writer-36-logo.png) no-repeat left;
+  font-size: 40px;
   margin: 8px 0 0 0;
   padding-left: 50px;
 
@@ -331,7 +332,8 @@ article.posts {
   }
 
   h1.title {
-    background: transparent url(images/gold-heart.png) no-repeat left;
+    background: transparent url(images/Writer-50-logo.png) no-repeat left;
+    font-size: 52px;
     margin-bottom: 10px;
     padding-left: 70px;
   }
