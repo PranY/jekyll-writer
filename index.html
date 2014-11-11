@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "Jekyll Golden Layout"
-description: blog
+title: "Blog"
+description: main blog page
 ---
-<h1 class="page-title">Blog</h1>
+<h1 class="page-title">{{ site.title }}</h1>
 {% for post in paginator.posts %}
 <article class="posts">
   <header>
