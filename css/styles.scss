@@ -57,25 +57,24 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 500;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   line-height: $header-line-height;
-  margin: 1em 0;
 }
 
 h1 {
-  font-size: 2.6em;
+  font-size: 2.375em;
 }
 h2 {
-  font-size: 1.9em;
+  font-size: 1.75em;
 }
 h3 {
-  font-size: 1.6em;
+  font-size: 1.3125em;
 }
 h4 {
-  font-size: 1.4em;
+  font-size: 1em;
 }
 h5 {
-  font-size: 1.2em;
+  font-size: .9em;
   text-transform: uppercase;
 }
 
@@ -98,10 +97,12 @@ h1.page-title {
 
 article h1 {
   color: $article-title-color;
+  margin-top: 0;
 }
 
-article.archive {
-  padding-left: 20px;
+article.archive,
+article.categories {
+  padding-left: 1em;
 }
 
 .archive time,
@@ -272,6 +273,44 @@ article.posts {
   }
 }
 
+aside {
+  border-top: $border-color solid 1px;
+  padding-bottom: 10px;
+
+  h2 {
+    color: $aside-title-color;
+  }
+  ul {
+    list-style: none;
+    margin-left: 22px;
+    margin-top: -20px;
+    padding-left: 0;
+  }
+  li {
+    font-family: $header-font-family;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  a {
+    display: block;
+    padding: .737em 0;
+    text-decoration: none;
+
+    &:link,
+    &:visited {
+      color: $link-color;
+    }
+    &:focus,
+    &:hover {
+      color: $hover-color;
+      text-decoration: underline;
+    }
+    &:active {
+      color: $active-color;
+    }
+  }
+}
+
 
 /*  Footer  */
 .footer {
@@ -350,8 +389,12 @@ article.posts {
     margin-top: .6em;
   }
   article h1 {
-    color: $article-title-color;
-    margin-top: 1.25em;
+    margin-top: .5em;
+  }
+
+  article.archive,
+  article.categories {
+    padding-left: 1.5em;
   }
 
   .header {
