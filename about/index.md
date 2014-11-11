@@ -4,12 +4,18 @@ title: About
 description: about
 ---
 
-## Welcome to Jekyll Golden
-Jekyll Golden is a Jekyll theme in which the layout and typography are based on the Golden Ratio, 1:1.618.
+## Welcome to Jekyll Writer
+Jekyll Writer is a simple Jekyll blogging theme with a responsive, mobile-first
+layout and stylish, easy to read typography.
 
 ### Jekyll
-You'll find this page in your `about` directory - edit this page and
-re-build (or run with the `-w` switch) to see your changes!
+Jekyll is a powerful static website generator. It takes raw markup files and templates
+and compiles them into a complete, static HTML website.
+
+Jekyll also happens to be the engine behind GitHub Pages which is easily Jekyll’s
+most attractive hosting solution. With it you can simply upload your Jekyll blog
+to a free GitHub repository and have it automatically compiled and deployed each
+time you commit.
 
 ### Posts
 To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
