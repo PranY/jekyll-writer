@@ -100,6 +100,11 @@ article h1 {
   margin-top: 0;
 }
 
+.blog-archives,
+.blog-categories {
+  padding-bottom: 30px;
+}
+
 article.archive,
 article.categories {
   padding-left: 1em;
@@ -134,10 +139,15 @@ a {
   padding: .5em 0;
 }
 
+.content a {
+  font-style: italic;
+}
+
 a {
   &.post-link {
     padding: .3em 0;
     text-decoration: none;
+    font-style: normal;
   }
   &:link.post-link,
   &:visited.post-link {
@@ -232,7 +242,7 @@ a {
   background: transparent url(images/toggle.png) no-repeat center;
 }
 
-article.posts {
+.blog-page .posts {
   border-bottom: $border-color solid 1px;
   margin-bottom: 2.618em;
   padding-bottom: 0;
@@ -256,6 +266,7 @@ article.posts {
   }
   a {
     display: block;
+    font-style: normal;
     padding: .8em 1em;
     text-decoration: none;
 
@@ -328,6 +339,7 @@ aside {
 
 /* Category List */
 @import "category_list";
+
 
 
 /* Media Queries */
