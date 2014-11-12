@@ -39,10 +39,10 @@ body {
   margin: 0 auto;
   max-width: 750px;
   width: 96%;
-}
 
-body p {
-  margin: 0 0 1.618em 0;
+  p {
+    margin: 0 0 1.618em 0;
+  }
 }
 
 .readtime {
@@ -313,6 +313,7 @@ aside {
 
 
 /*  Footer  */
+
 .footer {
   border-top: $border-color solid 1px;
   margin-top: 16px;
@@ -324,9 +325,9 @@ aside {
   }
 }
 
+
 /* Category List */
 @import "category_list";
-
 
 
 /* Media Queries */
