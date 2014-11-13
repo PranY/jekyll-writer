@@ -10,8 +10,8 @@ description: main blog page
   <header>
     <h2><a class="post-link"
            href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-    <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>
-      {{ post.date | date: "%b %-d, %Y" }}
+    <time datetime="{{ post.date | datetime | date_to_xmlschema }}"
+      >{{ post.date | date: "%b %-d, %Y" }}
     </time>
   </header>
   {{ post.content }}

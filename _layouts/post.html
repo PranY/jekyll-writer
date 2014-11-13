@@ -6,7 +6,7 @@ layout: default
     <h1>{{ page.title }}</h1>
 
     <time datetime="{{ page.date | datetime | date_to_xmlschema }}"
-          pubdate>{{ page.date | date: "%b %-d, %Y" }}
+      >{{ page.date | date: "%b %-d, %Y" }}
     </time>
     <p class="readtime">Time to read is: {{ content | reading_time_as_s }}</p>
   </header>
