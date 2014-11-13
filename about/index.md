@@ -14,7 +14,7 @@ and compiles them into a complete, static HTML website.
 
 Jekyll also happens to be the engine behind [GitHub Pages] which is easily Jekyll’s
 most attractive hosting solution. With it you can simply upload your Jekyll blog
-to a free GitHub repository and have it automatically compiled and deployed each
+to a free [GitHub] repository and have it automatically compiled and deployed each
 time you commit.
 
 ### Posts
@@ -41,4 +41,5 @@ Check out the [Jekyll docs][jekyll] for more info on how to get the most out of 
 [jekyll-gh]: http://github.com/mojombo/jekyll
 [jekyll]:    http://jekyllrb.com
 [Archives]: {{ site.baseurl }}/archives
+[GitHub]: http://github.com/
 [GitHub Pages]: http://pages.github.com/
