@@ -37,7 +37,7 @@ body {
   color: $body-font-color;
   background-color: $body-bg;
   margin: 0 auto;
-  max-width: 750px;
+  max-width: 720px;
   width: 96%;
 
   p {
@@ -426,6 +426,9 @@ aside {
 
   .footer {
     border-top: none;
+  }
+  .footer p {
+    font-size: .9em;
   }
 
   aside section.col-1,
