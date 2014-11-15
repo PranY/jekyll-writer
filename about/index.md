@@ -9,7 +9,7 @@ Jekyll Writer is a simple Jekyll blogging theme with a responsive, mobile-first
 layout and stylish, easy to read typography.
 
 ### Jekyll
-Jekyll is a powerful static website generator. It takes raw markup files and templates
+[Jekyll] is a powerful static website generator. It takes raw markup files and templates
 and compiles them into a complete, static HTML website.
 
 Jekyll also happens to be the engine behind [GitHub Pages] which is easily Jekyll’s
@@ -35,11 +35,12 @@ print_hi('Tom')
 {% endhighlight %}
 
 ##### Info
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+Check out the [Jekyll docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
 
 
-[jekyll-gh]: http://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
-[Archives]: {{ site.baseurl }}/archives
-[GitHub]: http://github.com/
-[GitHub Pages]: http://pages.github.com/
+[jekyll-gh]: http://github.com/mojombo/jekyll "Jekyll GitHub repo"
+[Jekyll]:    http://jekyllrb.com "Jekyll"
+[Jekyll docs]: http://jekyllrb.com/docs/home/ "Jekyll documentation"
+[Archives]: {{ site.baseurl }}/archives "Archives"
+[GitHub]: http://github.com/ "GitHub"
+[GitHub Pages]: http://pages.github.com/ "GitHub Pages"
