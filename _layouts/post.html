@@ -16,6 +16,20 @@ layout: default
       <p class="meta">
       <div class="categories">Filed under - {{ page.categories | category_links }}</div>
       </p>
+      <p class="meta page-url">
+        {% if page.previous.url %}
+        <a href="{{ site.baseurl }}{{page.previous.url}}"
+            title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a>
+        {% else %}
+        <span class="disabled">-</span>
+        {% endif %}
+        {% if page.next.url %}
+        <a href="{{ site.baseurl }}{{page.next.url}}"
+            title="Next Post: {{page.next.title}}">{{page.next.title}} &raquo;</a>
+        {% else %}
+        <span class="disabled">-</span>
+        {% endif %}
+      </p>
     </footer>
   </div>
 </article>
