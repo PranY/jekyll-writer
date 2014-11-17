@@ -17,6 +17,7 @@ description: archives
     <time datetime="{{ post.date | datetime | date_to_xmlschema }}"
       >{{ post.date | date: "%b %-d, %Y" }}
     </time>
+    <div>Filed under - {{ post.categories | category_links }}</div>
   </article>
   {% endfor %}
 </div>
