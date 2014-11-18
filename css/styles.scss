@@ -41,7 +41,7 @@ body {
   width: 96%;
 
   p {
-    margin: 0 0 1.618em 0;
+    margin: 0 0 1.5em 0;
   }
 }
 
@@ -111,12 +111,16 @@ article.categories {
   padding-left: 1em;
 }
 
-.archive time,
-.categories time,
+.archive,
+.categories,
+.posts {
+  time {
+    display: inline-block;
+    text-transform: uppercase;
+  }
+}
 .posts time {
-  display: inline-block;
   padding-bottom: .6em;
-  text-transform: uppercase;
 }
 
 a {
@@ -135,13 +139,14 @@ a {
   }
 }
 
-.content a,
-.footer a {
-  padding: .5em 0;
-}
-
 .content a {
   font-style: italic;
+}
+.content,
+.footer {
+  a {
+    padding: .5em 0;
+  }
 }
 
 a {
@@ -184,7 +189,7 @@ a {
   @include justify-content();
 
   li {
-    border-bottom: lightgray solid 1px;
+    border-bottom: $border-bottom-color solid 1px;
   }
   a {
     text-decoration: none;
@@ -273,7 +278,7 @@ a {
   @include justify-content(space-between);
 
   li span.disabled {
-    color: scale-color($link-color, $lightness: 60%);
+    color: lighten($link-color, 50%);
     display: block;
     padding: .8em 1em;
     text-decoration: none;

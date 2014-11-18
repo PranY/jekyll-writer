@@ -12,6 +12,7 @@ $body-bg: #f7f7f7 !default;
 $primary-color: #404040 !default;
 $secondary-color: #505050 !default;
 $border-color: #d8d8d8;
+$border-bottom-color: #d3d3d3;
 
 
 // font colors
@@ -25,8 +26,8 @@ $page-title-color: $site-title-color;
 // link colors
 $link-color: #505050;
 $content-link-color: $link-color;
-$hover-color: scale_color($link-color, $lightness: 25%);
+$hover-color: lighten($link-color, 25%);
 $active-color: #ff0000;
 
 $nav-link-active: $secondary-color;
-$nav-link-active-shad: scale-color($nav-link-active, $lightness: 25%) 1px 1px;
+$nav-link-active-shad: lighten($nav-link-active, 25%) 1px 1px;
