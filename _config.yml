@@ -20,4 +20,6 @@ highlighter: pygments
 
 paginate: 3
 
+google_analytics_tracking_id: xxx # your GA ID
+
 
