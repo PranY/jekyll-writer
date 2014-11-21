@@ -52,6 +52,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6,
+.copyright,
 .navigation,
 .pagination {
   font-family: $header-font-family;
@@ -319,7 +320,7 @@ aside {
   }
   li {
     font-family: $header-font-family;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 500;
   }
   a {
@@ -354,12 +355,17 @@ aside {
   .rss-subscribe {
     margin-left: 20px;
   }
+
+  p.copyright {
+    margin-bottom: 1em;
+  }
 }
+
+
 
 
 /* Category List */
 @import "category_list";
-
 
 
 /* Media Queries */
@@ -440,15 +446,25 @@ aside {
 
   .navigation,
   .pagination {
-    font-size: 1.04em;
+    font-size: 1em;
+  }
+
+  .page-url {
+    font-size: 1em;
   }
 
   .footer {
     border-top: none;
+
+    p {
+      font-size: .9em;
+
+      &.copyright {
+        font-size: 1em;
+      }
+    }
   }
-  .footer p {
-    font-size: .9em;
-  }
+
 
   aside section.col-1,
   aside section.col-2 {
