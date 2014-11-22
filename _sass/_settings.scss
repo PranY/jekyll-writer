@@ -18,16 +18,18 @@ $border-bottom-color: #d3d3d3;
 // font colors
 $body-font-color: #292929 !default;
 $article-title-color: $secondary-color;
-$aside-title-color: $body-font-color;
 $site-title-color: #636363;
 $page-title-color: $site-title-color;
+$aside-title-color: $site-title-color;
 
 
 // link colors
-$link-color: #505050;
+$link-color: $secondary-color;
 $content-link-color: $link-color;
 $hover-color: lighten($link-color, 25%);
 $active-color: #ff0000;
+
+$li-disabled-color: lighten($link-color, 50%);
 
 $nav-link-active: $secondary-color;
 $nav-link-active-shad: lighten($nav-link-active, 25%) 1px 1px;

@@ -46,11 +46,6 @@ body {
   }
 }
 
-.readtime {
-  font-style: italic;
-  margin: 0 0 1em .5em;
-}
-
 h1, h2, h3, h4, h5, h6,
 .copyright,
 .navigation,
@@ -79,6 +74,16 @@ h4 {
 h5 {
   font-size: .9em;
   text-transform: uppercase;
+}
+
+.footer-container,
+.header-container,
+.main-container {
+  background-color: $body-bg;
+}
+
+.header-container {
+  border-bottom: none;
 }
 
 h1.title {
@@ -121,8 +126,24 @@ article.categories {
     text-transform: uppercase;
   }
 }
+
 .posts time {
   padding-bottom: .6em;
+}
+
+.readtime {
+  font-style: italic;
+  margin: 0 0 1em .5em;
+}
+
+.content a {
+  font-style: italic;
+}
+.content,
+.footer {
+  a {
+    padding: .5em 0;
+  }
 }
 
 a {
@@ -138,16 +159,6 @@ a {
   }
   &:active {
     color: $active-color;
-  }
-}
-
-.content a {
-  font-style: italic;
-}
-.content,
-.footer {
-  a {
-    padding: .5em 0;
   }
 }
 
@@ -168,16 +179,6 @@ a {
   &:active.post-link {
     color: $active-color;
   }
-}
-
-.footer-container,
-.header-container,
-.main-container {
-  background-color: $body-bg;
-}
-
-.header-container {
-  border-bottom: none;
 }
 
 .navigation {
@@ -252,7 +253,7 @@ a {
 
 .blog-page .posts {
   border-bottom: $border-color solid 1px;
-  margin-bottom: 2.618em;
+  margin-bottom: 2.5em;
   padding-bottom: 0;
 }
 
@@ -280,7 +281,7 @@ a {
   @include justify-content(space-between);
 
   li span.disabled {
-    color: lighten($link-color, 50%);
+    color: $li-disabled-color;
     display: block;
     padding: .8em 1em;
     text-decoration: none;
@@ -349,15 +350,15 @@ aside {
 .footer {
   border-top: $border-color solid 1px;
   margin-top: 16px;
-  padding: 16px 0 16px 0;
+  padding: 16px 0;
   text-align: center;
-
-  .rss-subscribe {
-    margin-left: 20px;
-  }
 
   p.copyright {
     margin-bottom: 1em;
+  }
+
+  .rss-subscribe {
+    margin-left: 20px;
   }
 }
 
@@ -464,7 +465,6 @@ aside {
       }
     }
   }
-
 
   aside section.col-1,
   aside section.col-2 {
