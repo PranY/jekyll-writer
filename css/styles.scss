@@ -33,7 +33,7 @@ html {
 
 body {
   font-family: $base-font-family;
-  font-size: 1.15em;
+  font-size: 1em;
   font-weight: 400;
   color: $body-font-color;
   background-color: $body-bg;
@@ -98,15 +98,18 @@ h1.title {
   }
 }
 
-h1.page-title {
+h1.page-title,
+article h1 {
   color: $page-title-color;
-  margin-top: 1.15em;
+  margin-top: .125em;
 }
 
 article h1 {
   color: $article-title-color;
-  font-size: 1.75em;
-  margin-top: .25em;
+}
+
+article h2 {
+  margin-top: .4em;
 }
 
 .blog-archives,
@@ -183,7 +186,7 @@ a {
 }
 
 .navigation {
-  font-size: 1.2em;
+  font-size: 1.125em;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -370,7 +373,11 @@ aside {
 
 /* Media Queries */
 
-@media screen and (min-width: 36em) {
+@media screen and (min-width: $medium) {
+  body {
+    font-size: 1.125em;
+  }
+
   .navigation {
     @include flex-direction();
     @include justify-content(space-around);
@@ -418,21 +425,18 @@ aside {
 }
 
 
-@media screen and (min-width: 44em) {
+@media screen and (min-width: $large) {
   body {
     font-size: 1.25em;
   }
 
-  h1.page-title {
-    color: $page-title-color;
-    margin-top: .6em;
-  }
+  h1.page-title,
   article h1 {
     margin-top: .5em;
   }
 
-  article.archive,
-  article.categories {
+  .archive,
+  .categories {
     padding-left: 3em;
   }
 
@@ -444,13 +448,13 @@ aside {
     font-size: 52px;
   }
 
-  .navigation a {
-    padding: .6em 2em;
-  }
-
   .navigation,
   .pagination {
-    font-size: 1em;
+    font-size: 1.1em;
+  }
+
+  .navigation a {
+    padding: .6em 2em;
   }
 
   .page-url {

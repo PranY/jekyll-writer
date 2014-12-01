@@ -33,3 +33,7 @@ $li-disabled-color: lighten($link-color, 50%);
 
 $nav-link-active: $secondary-color;
 $nav-link-active-shad: lighten($nav-link-active, 25%) 1px 1px;
+
+// breakpoints
+$medium: 36em;
+$large: 44em;

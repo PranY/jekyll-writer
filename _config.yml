@@ -3,7 +3,7 @@ description: Simple blogging site
 author: mjohnq3
 title: Jekyll Writer
 
-url: mjohnq3.github.io/jekyll-writer
+url: mjohnq3.github.io
 baseurl: /jekyll-writer
 
 gems:
