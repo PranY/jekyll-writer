@@ -7,11 +7,12 @@ description: categories
 <h1 class="page-title">{{ page.title }}</h1>
   {% for post in site.categories[page.category] %}
   <div class="categories">
-      <h2><a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-      <time datetime="{{ post.date | datetime | date_to_xmlschema }}"
-        >{{ post.date | date: "%b %-d, %Y" }}
-      </time>
-      <div>Filed under - {{ post.categories | category_links }}</div>
+    <h2><a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    <time datetime="{{ post.date | datetime | date_to_xmlschema }}"
+      >{{ post.date | date: "%b %-d, %Y" }}
+    </time>
+    <div class="readtime">Time to read is: {{ post.content | reading_time_as_i }}</div>
+    <div>Filed under - {{ post.categories | category_links }}</div>
   </div>
   {% endfor %}
 </div>
