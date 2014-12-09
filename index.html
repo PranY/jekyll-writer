@@ -13,7 +13,7 @@ description: Simple blogging site - main page
     <time datetime="{{ post.date | datetime | date_to_xmlschema }}"
       >{{ post.date | date: "%b %-d, %Y" }}
     </time>
-    <div class="readtime">Time to read is: {{ post.content | reading_time_as_i }}</div>
+    <div class="readtime">Time to read: {{ post.content | reading_time_as_s }}</div>
   </header>
   {{ post.content }}
 

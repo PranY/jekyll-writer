@@ -8,7 +8,7 @@ layout: default
     <time datetime="{{ page.date | datetime | date_to_xmlschema }}"
       >{{ page.date | date: "%b %-d, %Y" }}
     </time>
-    <div class="readtime">Time to read is: {{ content | reading_time_as_s }}</div>
+    <div class="readtime">Time to read: {{ content | reading_time_as_s }}</div>
   </header>
   <div>
     {{ content }}

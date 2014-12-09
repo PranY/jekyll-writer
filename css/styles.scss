@@ -25,7 +25,7 @@
   *zoom: 1;
 }
 
-/* Main CSS */
+/*  Main CSS  */
 html {
   font-size: 100%;
   line-height: $base-line-height;
@@ -97,14 +97,14 @@ h1.title {
   }
 }
 
-h1.page-title,
-article h1 {
+h1.page-title {
   color: $page-title-color;
   margin-top: .125em;
 }
 
 article h1 {
   color: $article-title-color;
+  margin-top: .125em;
 }
 
 article h2 {
@@ -131,12 +131,12 @@ article.categories {
 }
 
 .posts time {
-  padding-bottom: .6em;
+  margin-bottom: .6em;
 }
 
-.readtime {
+.posts .readtime {
   font-style: italic;
-  margin: 0 0 1em .5em;
+  margin-bottom: .6em;
 }
 
 .content a {
@@ -378,6 +378,7 @@ aside {
   }
 
   .navigation {
+    font-size: 1.1em;
     @include flex-direction();
     @include justify-content(space-around);
 
@@ -420,6 +421,10 @@ aside {
     margin-bottom: 10px;
     padding-left: 70px;
   }
+
+  .pagination {
+    font-size: 1.1em;
+  }
 }
 
 
@@ -440,11 +445,6 @@ aside {
 
   .header {
     margin-top: 16px;
-  }
-
-  .navigation,
-  .pagination {
-    font-size: 1.1em;
   }
 
   .navigation a {
