@@ -1,5 +1,5 @@
 name: Jekyll Writer
-description: Simple blogging site
+description: Simple Jekyll blogging site
 author: mjohnq3
 title: Jekyll Writer
 
@@ -27,5 +27,3 @@ highlighter: pygments
 paginate: 3
 
 google_analytics_tracking_id: xxx # your GA ID
-
-
