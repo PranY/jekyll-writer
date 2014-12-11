@@ -308,7 +308,7 @@ a {
     }
   }
 }
-
+/*  Aside - below content  */
 aside {
   border-top: $border-color solid 1px;
   padding-bottom: 10px;
@@ -347,9 +347,7 @@ aside {
   }
 }
 
-
 /*  Footer  */
-
 .footer {
   border-top: $border-color solid 1px;
   margin-top: 16px;
@@ -365,13 +363,10 @@ aside {
   }
 }
 
-
 /* Category List */
 @import "category_list";
 
-
 /* Media Queries */
-
 @media screen and (min-width: $medium) {
   body {
     font-size: 1.125em;
@@ -439,7 +434,7 @@ aside {
   }
 
   .archive,
-  .categories {
+  .categories, {
     padding-left: 2em;
   }
 
