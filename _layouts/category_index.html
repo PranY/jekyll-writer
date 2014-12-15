@@ -6,12 +6,12 @@ description: categories
 <div class="blog-categories">
 <h1 class="page-title">{{ page.title }}</h1>
   {% for post in site.categories[page.category] %}
-  <div class="categories">
+  <article class="categories">
     <h2><a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
     <time datetime="{{ post.date | datetime | date_to_xmlschema }}"
       >{{ post.date | date: "%b %-d, %Y" }}
     </time>
-    <div>Filed in: {{ post.categories | category_links }}</div>
-  </div>
+    <div class="category-list">Filed in: {{ post.categories | category_links }}</div>
+  </article>
   {% endfor %}
 </div>

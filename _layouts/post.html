@@ -14,7 +14,7 @@ layout: default
     {{ content }}
     <footer>
       <p class="meta">
-      <div>Filed in: {{ page.categories | category_links }}</div>
+      <div class="category-list">Filed in: {{ page.categories | category_links }}</div>
       </p>
       <p class="meta page-url">
         {% if page.previous.url %}

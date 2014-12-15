@@ -11,12 +11,12 @@ description: archives
     {% assign year = this_year %}
     <h2>{{ year }}</h2>
   {% endunless %}
-  <div class="archive">
+  <article class="archive">
     <h2><a class="post-link"
       href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
     <time datetime="{{ post.date | datetime | date_to_xmlschema }}"
       >{{ post.date | date: "%b %-d, %Y" }}
     </time>
-  </div>
+  </article>
   {% endfor %}
 </div>
