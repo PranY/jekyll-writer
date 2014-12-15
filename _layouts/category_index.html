@@ -11,8 +11,7 @@ description: categories
     <time datetime="{{ post.date | datetime | date_to_xmlschema }}"
       >{{ post.date | date: "%b %-d, %Y" }}
     </time>
-    <div class="readtime">Time to read: {{ post.content | reading_time_as_i }}</div>
-    <div>Filed under - {{ post.categories | category_links }}</div>
+    <div>Filed in: {{ post.categories | category_links }}</div>
   </div>
   {% endfor %}
 </div>

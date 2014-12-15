@@ -27,11 +27,31 @@ Check out the [Archives] page to view all the posts.
 Jekyll also offers powerful support for code snippets:
 
 {% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
+module Jekyll
+  class CategoryList < Liquid::Tag
+    def render(context)
+      s = StringIO.new
+      begin
+        base_url = context['site']['baseurl']
+        categories = context['site']['categories']
+        unless categories.nil?
+          post_count = context['site']['posts'].size.to_i
+          categories.sort_by { |cat, posts| posts.size }
+            .reverse()
+            .each do |cat, posts|
+               s << "<li><em>#{posts.size}</em><a href=\"#{base_url}/categories/#{cat}\">#{cat}</a></li>"
+            end
+        end
+      rescue => boom
+        p boom
+      end
+      "<ul>#{s.string}</ul>"
+    end
+  end
 end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+
+Liquid::Template.register_tag('category_list', Jekyll::CategoryList)
+
 {% endhighlight %}
 
 ##### Info
