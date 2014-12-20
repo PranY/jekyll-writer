@@ -343,6 +343,30 @@ a {
     }
   }
 }
+
+/*  scroll to top  */
+.scroll-top {
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  z-index: 9999999;
+
+  a {
+    font-size: 24px;
+    background-color: rgba(220, 220, 220, .3);
+    border: thin dotted rgba(220, 220, 220, .8);;
+    border-radius: 6px;
+    color: rgba(41, 41, 41, .8);
+    padding: 8px 14px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: rgba(220, 220, 220, .6);
+      text-decoration: none;
+    }
+  }
+}
+
 /*  Aside - below content  */
 aside {
   border-top: $border-color solid 1px;
