@@ -17,9 +17,6 @@ most attractive hosting solution. With it you can simply upload your Jekyll blog
 to a free [GitHub] repository and have it automatically compiled and deployed each
 time you commit.
 
-### Posts
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
-
 ### Archives
 Check out the [Archives] page to view all the posts.
 
