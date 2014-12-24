@@ -12,7 +12,7 @@ gems:
 
 sass:
   sass_dir: _sass
-  style: :expanded
+  style: :compressed
 
 markdown: rdiscount
 rdiscount:
