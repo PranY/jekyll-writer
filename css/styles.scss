@@ -1,14 +1,14 @@
 ---
 
 ---
-/*  Imports */
+// Imports
 @import "normalize";
 @import "friendly_syntax";
 @import "settings";
 @import "flex";
 
 
-/*  Defaults  */
+// Defaults
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -26,7 +26,7 @@
 }
 
 
-/*  Main CSS  */
+// Main CSS
 html {
   font-size: 100%;
   line-height: $base-line-height;
@@ -82,7 +82,7 @@ h5 {
 }
 
 
-/* Code formatting  */
+// Code formatting
 pre,
 code {
   font-family: $code-font-family;
@@ -365,7 +365,7 @@ a {
   }
 }
 
-/*  scroll to top  */
+// scroll to top
 .scroll-top {
   position: fixed;
   bottom: 40px;
@@ -389,7 +389,7 @@ a {
 }
 
 
-/*  Aside - below content  */
+// Aside - below content
 aside {
   border-top: $border-color solid 1px;
   padding-bottom: 10px;
@@ -433,7 +433,7 @@ aside {
   }
 }
 
-/*  Footer  */
+// Footer
 .footer {
   border-top: $border-color solid 1px;
   margin-top: 16px;
@@ -450,11 +450,11 @@ aside {
 }
 
 
-/* Category List */
+// Category List
 @import "category_list";
 
 
-/* Media Queries */
+// Media Queries
 @media screen and (min-width: $medium) {
   body {
     font-size: 1.125em;
