@@ -240,12 +240,8 @@ a {
   padding: 0;
 
   @include flexbox;
-  @include flex-direction(column);
-  @include justify-content();
-
-  li {
-    border-bottom: $border-bottom-color solid 1px;
-  }
+  @include flex-direction();
+  @include justify-content(space-between);
 
   a {
     text-decoration: none;
@@ -273,39 +269,6 @@ a {
   }
 }
 
-.js .nav-collapse {
-  clip: rect(0 0 0 0);
-  max-height: 0;
-  position: absolute;
-  display: block;
-  overflow: hidden;
-  zoom: 1;
-}
-
-.nav-collapse.opened {
-  max-height: 9999px;
-}
-
-.disable-pointer-events {
-  pointer-events: none !important;
-}
-
-.nav-toggle {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 56px;
-  height: 50px;
-  position: absolute;
-  top: 8px;
-  right: 12px;
-  z-index: 100;
-  text-indent: -9999px;
-  overflow: hidden;
-  background: transparent url(images/toggle.png) no-repeat center;
-}
 
 .blog-page .posts {
   border-bottom: $border-color solid 1px;
@@ -461,13 +424,6 @@ aside {
   }
 
   .navigation {
-    font-size: 1.1em;
-    @include flex-direction();
-    @include justify-content(space-around);
-
-    li {
-      border-bottom: none;
-    }
 
     a {
       padding: .6em 1em;
@@ -491,18 +447,6 @@ aside {
         color: $nav-link-active;
       }
     }
-  }
-
-  .js .nav-collapse {
-    position: relative;
-  }
-
-  .js .nav-collapse.closed {
-    max-height: none;
-  }
-
-  .nav-toggle {
-    display: none;
   }
 
   h1.title {
@@ -537,6 +481,7 @@ aside {
 
   .navigation a {
     padding: .6em 2em;
+    @include justify-content(space-around);
   }
 
   .page-url {
