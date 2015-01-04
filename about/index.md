@@ -23,7 +23,7 @@ Check out the [Archives] page to view all the posts.
 #### Code
 Jekyll also offers powerful support for code snippets:
 
-{% highlight ruby %}
+{% highlight ruby lineos %}
 module Jekyll
   class CategoryList < Liquid::Tag
     def render(context)
