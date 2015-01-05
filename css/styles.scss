@@ -3,9 +3,9 @@
 ---
 // Imports
 @import "normalize";
-@import "friendly_syntax";
 @import "settings";
 @import "flex";
+@import "friendly_syntax";
 
 
 // Defaults
@@ -105,6 +105,7 @@ pre {
     padding-left: 0;
   }
 }
+
 
 .footer-container,
 .header-container,
@@ -328,7 +329,8 @@ a {
   }
 }
 
-// scroll to top
+
+// Scroll to top
 .scroll-top {
   position: fixed;
   bottom: 40px;
@@ -396,6 +398,7 @@ aside {
   }
 }
 
+
 // Footer
 .footer {
   border-top: $border-color solid 1px;
@@ -427,25 +430,6 @@ aside {
 
     a {
       padding: .6em 1em;
-
-      &:link,
-      &:visited {
-        color: $link-color;
-        text-decoration: none;
-      }
-
-      &:focus,
-      &:hover {
-        color: $hover-color;
-      }
-
-      &:active {
-        color: $active-color;
-      }
-
-      &.active {
-        color: $nav-link-active;
-      }
     }
   }
 
@@ -509,6 +493,7 @@ aside {
 }
 
 
+// Print styles
 @media print {
   * {
     background: transparent !important;
