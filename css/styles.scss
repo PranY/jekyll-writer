@@ -106,7 +106,6 @@ pre {
   }
 }
 
-
 .footer-container,
 .header-container,
 .main-container {
@@ -194,6 +193,13 @@ article.posts {
 }
 
 
+// Scroll to top
+.scroll-top {
+  display: none;
+}
+
+
+// links
 a {
   &:link,
   &:visited {
@@ -270,7 +276,6 @@ a {
   }
 }
 
-
 .blog-page .posts {
   border-bottom: $border-color solid 1px;
   margin-bottom: 2.5em;
@@ -325,30 +330,6 @@ a {
 
     &:active {
       color: $active-color;
-    }
-  }
-}
-
-
-// Scroll to top
-.scroll-top {
-  position: fixed;
-  bottom: 40px;
-  right: 10px;
-  z-index: 9999999;
-
-  a {
-    font-size: 24px;
-    background-color: rgba(220, 220, 220, .3);
-    border: thin dotted rgba(220, 220, 220, .8);;
-    border-radius: 6px;
-    color: #292929;
-    padding: 8px 14px;
-    text-decoration: none;
-
-    &:hover {
-      background-color: rgba(220, 220, 220, .6);
-      text-decoration: none;
     }
   }
 }
@@ -470,6 +451,30 @@ aside {
 
   .page-url {
     font-size: 1em;
+  }
+
+  // Scroll to top
+  .scroll-top {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    z-index: 9999999;
+
+    a {
+      font-size: 24px;
+      background-color: rgba(220, 220, 220, .3);
+      border: thin dotted rgba(220, 220, 220, .8);;
+      border-radius: 6px;
+      color: #292929;
+      padding: 8px 14px;
+      text-decoration: none;
+
+      &:hover {
+        background-color: rgba(220, 220, 220, .6);
+        text-decoration: none;
+      }
+    }
   }
 
   .footer {
