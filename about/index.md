@@ -23,7 +23,7 @@ Check out the [Archives] page to view all the posts.
 ### Images
 Images are added using the [octopress-image-tag] plugin.
 
-{% img post-image {{ site.baseurl }}/images/maine-snowstorm-12.jpg title:"Maine Snowstorm" %}
+{% img post-image {{ site.baseurl }}/img/maine-snowstorm-12.jpg title:"Maine Snowstorm" %}
 
 #### Code
 Jekyll also offers powerful support for code snippets:
