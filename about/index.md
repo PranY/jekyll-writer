@@ -20,6 +20,11 @@ time you commit.
 ### Archives
 Check out the [Archives] page to view all the posts.
 
+### Images
+Images are added using the [octopress-image-tag] plugin.
+
+{% img post-image {{ site.baseurl }}/images/maine-snowstorm-12.jpg title:"Maine Snowstorm" %}
+
 #### Code
 Jekyll also offers powerful support for code snippets:
 
@@ -61,3 +66,4 @@ Check out the [Jekyll docs] for more info on how to get the most out of Jekyll. 
 [Archives]: {{ site.baseurl }}/archives "Archives"
 [GitHub]: http://github.com/ "GitHub"
 [GitHub Pages]: http://pages.github.com/ "GitHub Pages"
+[octopress-image-tag]: https://github.com/octopress/image-tag "Octopress Image Tag"
