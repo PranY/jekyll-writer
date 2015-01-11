@@ -6,7 +6,8 @@ description: about
 
 ## Welcome to Jekyll Writer
 Jekyll Writer is a simple Jekyll blogging theme with a responsive, mobile-first
-layout, stylish monochromatic design, and easy to read typography.
+layout, stylish monochromatic design, and easy to read typography. You can view the view
+the [Jekyll Writer GitHub] repository.
 
 ### Jekyll
 [Jekyll] is a powerful static website generator. It takes raw markup files and templates
@@ -66,4 +67,5 @@ Check out the [Jekyll docs] for more info on how to get the most out of Jekyll. 
 [Archives]: {{ site.baseurl }}/archives "Archives"
 [GitHub]: http://github.com/ "GitHub"
 [GitHub Pages]: http://pages.github.com/ "GitHub Pages"
+[Jekyll Writer GitHub]: https://github.com/mjohnq3/jekyll-writer "Jekyll Writer GitHub"
 [octopress-image-tag]: https://github.com/octopress/image-tag "Octopress Image Tag"

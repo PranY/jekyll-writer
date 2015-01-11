@@ -36,6 +36,12 @@ $li-disabled-color: lighten($link-color, 50%);
 $nav-link-active: $secondary-color;
 $nav-link-active-shad: lighten($nav-link-active, 25%) 1px 1px;
 
+// scroll to top
+$stt-target-color: rgba(#292929, 0.8);
+$stt-background-color: rgba(#dcdcdc, 0.3);
+$stt-border-color: rgba(#dcdcdc, 0.8);
+$stt-hover-color: rgba(#dcdcdc, 0.6);
+
 
 // breakpoints
 $medium: 36em; // 576px

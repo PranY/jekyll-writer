@@ -5,7 +5,7 @@
 @import "normalize";
 @import "settings";
 @import "flex";
-@import "friendly_syntax";
+@import "friendly-syntax";
 @import "print";
 
 
@@ -57,12 +57,12 @@ body {
   width: 96%;
 
   p {
-    margin: 0 0 1.5em 0;
+    margin: 0 0 1.5em;
   }
 }
 
 
-// Typography
+// Headings
 h1, h2, h3, h4, h5, h6,
 .copyright,
 .navigation,
@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5 {
 
 h1.title {
   background: transparent url(images/Writer-36-logo.png) no-repeat left;
-  margin: 8px 0 0 0;
+  margin: 8px 0 0;
   padding-left: 50px;
 
   @media screen and (min-width: $medium) {
@@ -283,6 +283,9 @@ a {
   @include flexbox;
   @include flex-direction();
   @include justify-content(space-between);
+  @media screen and (min-width: $large) {
+    @include justify-content(space-around);
+  }
 
   a {
     text-decoration: none;
@@ -295,7 +298,6 @@ a {
 
     @media screen and (min-width: $large) {
       padding: .6em 1.5em;
-      @include justify-content(space-around);
     }
 
     &:link,
@@ -320,7 +322,7 @@ a {
 }
 
 .blog-page .posts {
-  border-bottom: $border-color solid 1px;
+  border-bottom: 1px solid $border-color;
   margin-bottom: 2.5em;
   padding-bottom: 0;
 }
@@ -329,13 +331,18 @@ a {
   @include flexbox;
   @include flex-direction();
   @include justify-content(space-between);
-  font-size: .9em;
-  @media screen and (min-width: $large) {
-    font-size: 1em;
-  }
-
+  font-size: 1em;
   margin: 0;
   padding: .5em 0;
+
+  a.prev {
+    padding-right: .4em;
+  }
+
+  a.next {
+    padding-left: .4em;
+    text-align: right;
+  }
 
   .disabled {
     color: transparent;
@@ -344,10 +351,6 @@ a {
 
 .pagination {
   font-size: 1.125em;
-  @media screen and (min-width: $medium) {
-    font-size: 1.1em;
-  }
-
   list-style: none;
   margin: 0;
   padding: 0;
@@ -359,14 +362,14 @@ a {
   li span.disabled {
     color: $li-disabled-color;
     display: block;
-    padding: .8em 1em;
+    padding: .6em 1em;
     text-decoration: none;
   }
 
   a {
     display: block;
     font-style: normal;
-    padding: .8em 1em;
+    padding: .6em 1em;
     text-decoration: none;
 
     &:link,
@@ -410,7 +413,7 @@ aside {
 
   a {
     display: block;
-    padding: .63em 0;
+    padding: .5em 0;
     text-decoration: none;
 
     &:link,
@@ -439,11 +442,15 @@ aside {
   text-align: center;
 
   p.copyright {
-    margin-bottom: 1em;
+    margin-bottom: .6em;
+  }
+
+  p.license {
+    margin-bottom: 0;
   }
 
   .rss-subscribe {
-    margin-left: 20px;
+    margin-left: 26px;
   }
 }
 
@@ -473,15 +480,15 @@ aside {
 
     a {
       font-size: 24px;
-      background-color: rgba(220, 220, 220, .3);
-      border: thin dotted rgba(220, 220, 220, .8);;
+      background-color: $stt-background-color;
+      border: thin dotted $stt-border-color;
       border-radius: 6px;
-      color: #292929;
+      color: $stt-target-color;
       padding: 8px 14px;
       text-decoration: none;
 
       &:hover {
-        background-color: rgba(220, 220, 220, .6);
+        background-color: $stt-hover-color;
         text-decoration: none;
       }
     }
@@ -491,9 +498,13 @@ aside {
     border-top: none;
 
     p {
-      font-size: .9em;
+      font-size: .84em;
 
       &.copyright {
+        font-size: 1em;
+      }
+
+      &.meta {
         font-size: 1em;
       }
     }

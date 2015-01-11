@@ -23,19 +23,19 @@ description: Simple Jekyll blogging site - main page
 <div>
   <ul class="pagination">
     {% if paginator.next_page %}
-    <li><a href="{{ site.baseurl }}/page{{ paginator.next_page }}">Older</a></li>
+    <li><a href="{{ site.baseurl }}/page{{ paginator.next_page }}">&laquo;&nbsp;Older</a></li>
     {% else %}
-    <li><span class="disabled">Older</span></li>
+    <li><span class="disabled">&laquo;&nbsp;Older</span></li>
     {% endif %}
     <a href="{{ site.baseurl }}/archives">Archives</a>
     {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-    <li><a href="{{ site.baseurl }}/">Newer</a></li>
+    <li><a href="{{ site.baseurl }}/">Newer&nbsp;&raquo;</a></li>
     {% else %}
-    <li><a href="{{ site.baseurl }}/page{{ paginator.previous_page }}">Newer</a></li>
+    <li><a href="{{ site.baseurl }}/page{{ paginator.previous_page }}">Newer&nbsp;&raquo;</a></li>
     {% endif %}
     {% else %}
-    <li><span class="disabled">Newer</span></li>
+    <li><span class="disabled">Newer&nbsp;&raquo;</span></li>
     {% endif %}
   </ul>
 </div>
