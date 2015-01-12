@@ -10,13 +10,13 @@ module Jekyll
           categories.sort_by { |cat, posts| posts.size }
             .reverse()
             .each do |cat, posts|
-               s << "<li><em>#{posts.size}</em><a href=\"#{base_url}/categories/#{cat}\">#{cat}</a></li>"
+               s << "<a href=\"#{base_url}/categories/#{cat}\">#{cat}&nbsp;<em>#{posts.size}</em></a>"
             end
         end
       rescue => boom
         p boom
       end
-      "<ul>#{s.string}</ul>"
+      "#{s.string}"
     end
   end
 end

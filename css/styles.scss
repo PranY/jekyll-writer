@@ -400,7 +400,7 @@ aside {
 
   ul {
     list-style: none;
-    margin-left: 22px;
+    margin-left: 10px;
     margin-top: -10px;
     padding-left: 0;
   }
@@ -434,6 +434,39 @@ aside {
 }
 
 
+// Category Cloud
+.category-cloud {
+  font-family: $header-font-family;
+  font-size: 1.125em;
+  font-weight: 500;
+  margin-top: -10px;
+
+  @include flexbox;
+  @include flex-direction();
+  @include flex-wrap(wrap);
+  @include justify-content();
+
+  a {
+    display: block;
+    padding: .5em;
+  }
+
+  em {
+    font-size: .9em;
+    font-style: normal;
+
+    &:before {
+      content: "(";
+    }
+
+    &:after {
+      content: ")";
+    }
+  }
+}
+
+
+
 // Footer
 .footer {
   border-top: $border-color solid 1px;
@@ -454,9 +487,6 @@ aside {
   }
 }
 
-
-// Category List
-@import "category_list";
 
 
 // Media Queries
