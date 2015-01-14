@@ -10,7 +10,8 @@ module Jekyll
           categories.sort_by { |cat, posts| posts.size }
             .reverse()
             .each do |cat, posts|
-               s << "<a href=\"#{base_url}/categories/#{cat}\">#{cat}&nbsp;<em>#{posts.size}</em></a>"
+               cat1 = cat.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase
+               s << "<a href=\"#{base_url}/categories/#{cat1}\">#{cat}&nbsp;<em>#{posts.size}</em></a>"
             end
         end
       rescue => boom
