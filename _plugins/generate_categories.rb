@@ -80,10 +80,13 @@ module Jekyll
         self.data['category']    = category
         # Set the title for this page.
         title_prefix             = site.config['category_title_prefix'] || 'Category: '
-        self.data['title']       = "#{title_prefix}#{category}"
+        category1 = category.gsub(/\w+/) do |word|
+          word.capitalize
+        end
+        self.data['title']       = "#{title_prefix}#{category1}"
         # Set the meta-description for this page.
         meta_description_prefix  = site.config['category_meta_description_prefix'] || 'Category: '
-        self.data['description'] = "#{meta_description_prefix}#{category}"
+        self.data['description'] = "#{meta_description_prefix}#{category1}"
       else
         @perform_render = false
       end
@@ -188,7 +191,7 @@ module Jekyll
     # back on the default if no dir is provided.
     def self.category_dir(base_dir, category)
       base_dir = (base_dir || CATEGORY_DIR).gsub(/^\/*(.*)\/*$/, '\1')
-      category = category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').downcase
+      category = category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-')
       File.join(base_dir, category)
     end
 
@@ -211,7 +214,10 @@ module Jekyll
         category_dir = GenerateCategories.category_dir(base_dir, category)
         # Make sure the category directory begins with a slash.
         category_dir = "/#{category_dir}" unless category_dir =~ /^\//
-        "<a class='category' href='#{base_url}#{category_dir}/'>#{category}</a>"
+        category1 = category.gsub(/\w+/) do |word|
+          word.capitalize
+        end
+        "<a class='category' href='#{base_url}#{category_dir}/'>#{category1}</a>"
       end
 
       case categories.length

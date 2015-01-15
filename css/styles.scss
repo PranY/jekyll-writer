@@ -434,17 +434,9 @@ aside {
 }
 
 
-// Category Cloud
-.category-cloud {
-  font-family: $header-font-family;
-  font-size: 1.125em;
-  font-weight: 500;
+// Category List
+.category-listings {
   margin-top: -10px;
-
-  @include flexbox;
-  @include flex-direction();
-  @include flex-wrap(wrap);
-  @include justify-content();
 
   a {
     display: block;
