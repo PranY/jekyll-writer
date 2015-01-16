@@ -3,34 +3,11 @@
 ---
 // Imports
 @import "normalize";
+@import "defaults";
 @import "settings";
 @import "flex";
 @import "friendly-syntax";
 @import "print";
-
-
-// Defaults
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-.clearfix {
-  *zoom: 1;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  border: 0;
-}
 
 
 // Main CSS
