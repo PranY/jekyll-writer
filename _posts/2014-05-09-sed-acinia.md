@@ -2,7 +2,8 @@
 layout: post
 title: "Sed Lacinia"
 date: 2014-05-09 15:16:23
-categories: jekyll metus
+categories:
+  - lorem ipsum
 --- 
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit.
 
