@@ -26,6 +26,15 @@ Images are added using the [octopress-image-tag] plugin.
 
 {% img post-image {{ site.baseurl }}/img/maine-snowstorm-12.jpg title:"Maine Snowstorm" %}
 
+### Quotes
+Quotes are added using the [octopress-quote-tag] plugin.
+
+{% quote author:"Julius Caesar" %}
+Et tu, Brute? Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque
+adipiscing diam, a cursus ipsum ante quis turpis.
+{% endquote %}
+
+
 #### Code
 Jekyll also offers powerful support for code snippets:
 
@@ -69,3 +78,4 @@ Check out the [Jekyll docs] for more info on how to get the most out of Jekyll. 
 [GitHub Pages]: http://pages.github.com/ "GitHub Pages"
 [Jekyll Writer GitHub]: https://github.com/mjohnq3/jekyll-writer "Jekyll Writer GitHub"
 [octopress-image-tag]: https://github.com/octopress/image-tag "Octopress Image Tag"
+[octopress-quote-tag]: https://github.com/octopress/quote-tag "Octopress Quote Tag"
