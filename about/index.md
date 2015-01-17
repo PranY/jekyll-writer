@@ -22,22 +22,33 @@ time you commit.
 Check out the [Archives] page to view all the posts.
 
 ### Images
-Images are added using the [octopress-image-tag] plugin.
+Images are enabled using the [octopress-image-tag] plugin.
 
 {% img post-image {{ site.baseurl }}/img/maine-snowstorm-12.jpg title:"Maine Snowstorm" %}
 
 ### Quotes
-Quotes are added using the [octopress-quote-tag] plugin.
+Quotes are enabled using the [octopress-quote-tag] plugin.
 
 {% quote author:"Julius Caesar" %}
 Et tu, Brute? Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque
 adipiscing diam, a cursus ipsum ante quis turpis.
 {% endquote %}
 
+### Pull Quotes
+Pull Quotes are enabled using the [octopress-pullquote-tag] plugin.
 
-#### Code
+{% pullquote %}
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+himenaeos. Nam nec ante. {" Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing
+diam, a cursus ipsum ante quis turpis. "} Nulla facilisi. Ut fringilla. Suspendisse potenti.
+Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam.
+Etiam ultrices. Suspendisse in justo eu magna luctus suscipit.
+{% endpullquote %}
+
+### Code
 Jekyll also offers powerful support for code snippets:
 
+#### Ruby
 {% highlight ruby lineos %}
 module Jekyll
   class CategoryList < Liquid::Tag
@@ -66,7 +77,23 @@ Liquid::Template.register_tag('category_list', Jekyll::CategoryList)
 
 {% endhighlight %}
 
-##### Info
+#### CSS
+{% highlight css lineos %}
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+{% endhighlight %}
+
+### Info
 Check out the [Jekyll docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
 
 
@@ -79,3 +106,4 @@ Check out the [Jekyll docs] for more info on how to get the most out of Jekyll. 
 [Jekyll Writer GitHub]: https://github.com/mjohnq3/jekyll-writer "Jekyll Writer GitHub"
 [octopress-image-tag]: https://github.com/octopress/image-tag "Octopress Image Tag"
 [octopress-quote-tag]: https://github.com/octopress/quote-tag "Octopress Quote Tag"
+[octopress-pullquote-tag]: https://github.com/octopress/pullquote-tag "Octopress Pull Quote Tag"

@@ -69,25 +69,7 @@ h1, h2, h3, h4, h5, h6, th, td, caption {
 // Blockquote
 figure {
   margin: 0;
-  //outline: thin solid red;
 }
-
-/*
-blockquote {
-  border-left: 5px solid $border-color;
-  color: $body-font-color;
-  margin: 1em 0 1em;
-  padding: 1px 1rem 1px 2rem;
-  //outline: thin solid blue;
-
-  p {
-    font-style: italic;
-    margin: .8rem 0;
-
-  }
-} */
-
-
 
 blockquote {
   background: #f9f9f9;
@@ -95,18 +77,20 @@ blockquote {
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
-}
-blockquote:before {
-  color: $border-color;
-  content: open-quote;
-  font-size: 2.5em;
-  line-height: 0.1em;
-  margin-right: 0.1em;
-  vertical-align: -0.4em;
-}
-blockquote p {
-  display: inline;
-  font-style: italic;
+
+  &:before {
+    color: $border-color;
+    content: open-quote;
+    font-size: 2.5em;
+    line-height: 0.1em;
+    margin-right: 0.1em;
+    vertical-align: -0.4em;
+  }
+
+  p {
+    display: inline;
+    font-style: italic;
+  }
 }
 
 .quote-author {
@@ -115,4 +99,25 @@ blockquote p {
   &:before {
     content: " - ";
   }
+}
+
+
+// Pull quotes
+.pullquote-right:before {
+  font-family: $header-font-family;
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 1.4;
+
+  padding: 0;
+  border: none;
+
+  content: attr(data-pullquote);
+
+  float: right;
+  width: 42%;
+  margin: 12px 0 24px 36px;
+
+  position: relative;
+  top: 5px;
 }
