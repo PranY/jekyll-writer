@@ -35,7 +35,8 @@ adipiscing diam, a cursus ipsum ante quis turpis.
 {% endquote %}
 
 ### Pull Quotes
-Pull Quotes are enabled using the [octopress-pullquote-tag] plugin.
+Pull Quotes are enabled using the [octopress-pullquote-tag] plugin. (Disabled on smaller
+screen sizes.)
 
 {% pullquote %}
 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos

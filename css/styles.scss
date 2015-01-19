@@ -92,6 +92,41 @@ h5 {
 }
 
 
+// Blockquote
+figure {
+  margin: 0;
+}
+
+blockquote {
+  border-left: 5px solid $border-color;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+
+  &:before {
+    color: $border-color;
+    content: open-quote;
+    font-size: 2.5em;
+    line-height: 0.1em;
+    margin-right: 0.1em;
+    vertical-align: -0.4em;
+  }
+
+  p {
+    display: inline;
+    font-style: italic;
+  }
+}
+
+.quote-author {
+  font-style: normal;
+
+  &:before {
+    content: " - ";
+  }
+}
+
+
 // Code formatting
 pre,
 code {
@@ -435,7 +470,6 @@ aside {
 }
 
 
-
 // Footer
 .footer {
   border-top: $border-color solid 1px;
@@ -457,8 +491,27 @@ aside {
 }
 
 
-
 // Media Queries
+@media screen and (min-width: $small) {
+  // Pull Quotes
+  .pullquote-right:before {
+    font-family: $header-font-family;
+    font-size: 1.2em;
+    font-weight: normal;
+    line-height: 1.652em;
+
+    content: attr(data-pullquote);
+
+    border: none;
+    float: right;
+    margin: 0 0 12px 2.25em;
+    padding: 0;
+    position: relative;
+    top: -5px;
+    width: 42%;
+  }
+}
+
 @media screen and (min-width: $large) {
   h1.page-title,
   article h1 {
