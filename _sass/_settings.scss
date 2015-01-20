@@ -31,8 +31,6 @@ $content-link-color: $link-color;
 $hover-color: lighten($link-color, 25%);
 $active-color: #ff0000;
 
-$li-disabled-color: lighten($link-color, 50%);
-
 $nav-link-active: $secondary-color;
 $nav-link-active-shad: lighten($nav-link-active, 25%) 1px 1px;
 

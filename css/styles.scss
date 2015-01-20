@@ -226,11 +226,6 @@ article.posts {
   a {
     font-style: italic;
   }
-  .category-list {
-    a {
-      padding-left: .5em;
-    }
-  }
 }
 
 .post-image {
@@ -372,7 +367,7 @@ a {
   @include justify-content(space-between);
 
   li span.disabled {
-    color: $li-disabled-color;
+    color: transparent;
     display: block;
     padding: .6em 1em;
     text-decoration: none;
