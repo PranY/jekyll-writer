@@ -384,6 +384,14 @@ a {
     padding: .6em 1em;
     text-decoration: none;
 
+    &.next {
+      padding-left: 0;
+    }
+
+    &.prev {
+      padding-right: 0;
+    }
+
     &:link,
     &:visited {
       color: $link-color;
