@@ -75,34 +75,22 @@ h5 {
 }
 
 
-// Site Title & Logo
-h1.site-title {
-  line-height: 1;
-  margin: 0 0 .2em;
-  padding: 0;
+// Site title
+h1.title {
+  background: transparent url(images/Writer-36-logo.png) no-repeat left;
+  margin: 8px 0 0;
+  padding-left: 50px;
+
+  @media screen and (min-width: $medium) {
+    background: transparent url(images/Writer-50-logo.png) no-repeat left;
+    margin-bottom: 10px;
+    padding-left: 70px;
+  }
 
   a {
     color: $site-title-color;
     text-decoration: none;
   }
-}
-
-.site-subtitle {
-  font-size: 1.08em;
-  font-style: italic;
-  margin: 0;
-  padding-bottom: 5px;
-}
-
-a.site-logo {
-  float: left;
-  width: 15%;
-}
-
-.site-name {
-  float: left;
-  padding-left: 1em;
-  width: 85%;
 }
 
 
