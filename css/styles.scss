@@ -510,16 +510,16 @@ aside {
     font-family: $header-font-family;
     font-size: 1.2em;
     font-weight: normal;
-    line-height: 1.652em;
+    line-height: 1.667em;
 
     content: attr(data-pullquote);
 
     border: none;
     float: right;
-    margin: 0 0 12px 2.25em;
+    margin: 0 0 12px 1.25em;
     padding: 0;
     position: relative;
-    top: -5px;
+    top: -6px;
     width: 42%;
   }
 }
