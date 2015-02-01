@@ -29,9 +29,8 @@ Images are enabled using the [octopress-image-tag] plugin.
 ### Quotes
 Quotes are enabled using the [octopress-quote-tag] plugin.
 
-{% quote author:"Julius Caesar" %}
-Et tu, Brute? Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque
-adipiscing diam, a cursus ipsum ante quis turpis.
+{% quote author: "Julius Caesar" url:https://en.wikipedia.org/wiki/Alea_iacta_est "Julius Caesar" %}
+Alea iacta est. (The die is cast.)
 {% endquote %}
 
 ### Pull Quotes
