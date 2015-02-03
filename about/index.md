@@ -29,8 +29,8 @@ Images are enabled using the [octopress-image-tag] plugin.
 ### Quotes
 Quotes are enabled using the [octopress-quote-tag] plugin.
 
-{% quote author: "Julius Caesar" url:https://en.wikipedia.org/wiki/Alea_iacta_est "Julius Caesar" %}
-Alea iacta est. (The die is cast.)
+{% quote author: "Cato the Elder" url:https://en.wikipedia.org/wiki/Cato_the_Elder "Cato the Elder" %}
+Cum dubia et fragilis sit nobis vita tributa, in morte alterius spem to tibi ponere noli.
 {% endquote %}
 
 ### Pull Quotes
