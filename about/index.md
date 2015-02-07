@@ -4,12 +4,12 @@ title: About
 description: about
 ---
 
-## Welcome to Jekyll Writer
+# Welcome to Jekyll Writer
 Jekyll Writer is a simple Jekyll blogging theme with a responsive, mobile-first
 layout, stylish monochromatic design, and easy to read typography. You can view the
 code in my [Jekyll Writer GitHub] repository.
 
-### Jekyll
+## Jekyll
 [Jekyll] is a powerful static website generator. It takes raw markup files and templates
 and compiles them into a complete, static HTML website.
 
@@ -18,22 +18,22 @@ most attractive hosting solution. With it you can simply upload your Jekyll blog
 to a free [GitHub] repository and have it automatically compiled and deployed each
 time you commit.
 
-### Archives
+## Archives
 Check out the [Archives] page to view all the posts.
 
-### Images
+## Images
 Images are enabled using the [octopress-image-tag] plugin.
 
 {% img post-image {{ site.baseurl }}/img/maine-snowstorm-12.jpg title:"Maine Snowstorm" %}
 
-### Quotes
+## Quotes
 Quotes are enabled using the [octopress-quote-tag] plugin.
 
 {% quote author: "Cato the Elder" url:https://en.wikipedia.org/wiki/Cato_the_Elder "Cato the Elder" %}
 Cum dubia et fragilis sit nobis vita tributa, in morte alterius spem to tibi ponere noli.
 {% endquote %}
 
-### Pull Quotes
+## Pull Quotes
 Pull Quotes are enabled using the [octopress-pullquote-tag] plugin. (Disabled on smaller
 screen sizes.)
 
@@ -45,10 +45,10 @@ Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam.
 Etiam ultrices. Suspendisse in justo eu magna luctus suscipit.
 {% endpullquote %}
 
-### Code
+## Code
 Jekyll also offers powerful support for code snippets:
 
-#### Ruby
+### Ruby
 {% highlight ruby lineos %}
 module Jekyll
   class CategoryList < Liquid::Tag
@@ -77,7 +77,7 @@ Liquid::Template.register_tag('category_list', Jekyll::CategoryList)
 
 {% endhighlight %}
 
-#### CSS
+### CSS
 {% highlight css lineos %}
 /* Clearfix */
 .clearfix:before,
@@ -93,7 +93,7 @@ Liquid::Template.register_tag('category_list', Jekyll::CategoryList)
 }
 {% endhighlight %}
 
-### Info
+#### Info
 Check out the [Jekyll docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
 
 

@@ -54,23 +54,25 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 2.25em;
+  font-size: 2em;
 }
 
 h2 {
-  font-size: 1.6879em;
+  font-size: 1.50em;
 }
 
 h3 {
-  font-size: 1.2662em;
+  font-size: 1.125em;
 }
 
 h4 {
-  font-size: 0.9499em;
+  font-size: 0.844em;
+  text-transform: uppercase;
 }
 
 h5 {
-  font-size: 0.7126em;
+  font-size: 0.844em;
+  font-style: italic;
   text-transform: uppercase;
 }
 
