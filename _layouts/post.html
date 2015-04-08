@@ -13,9 +13,14 @@ layout: default
   <div>
     {{ content }}
     <footer>
-      <p class="meta">
-      <div class="category-list">Filed in: {{ page.categories | category_links }}</div>
-      </p>
+      <div class="meta">
+        <p>
+        <div class="category-list">Filed in: {{ page.categories | category_links }}</div>
+        </p>
+
+        <p>Share on {% tweet_link %}</p>
+      </div>
+
       <p class="meta page-url">
         {% if page.previous.url %}
         <a class="prev" href="{{ site.baseurl }}{{page.previous.url}}"
