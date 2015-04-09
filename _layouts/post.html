@@ -14,11 +14,8 @@ layout: default
     {{ content }}
     <footer>
       <div class="meta">
-        <p>
         <div class="category-list">Filed in: {{ page.categories | category_links }}</div>
-        </p>
-
-        <p>Share on {% tweet_link %}</p>
+        <div class="tweet-link">Share on {% tweet_link %}</div>
       </div>
 
       <p class="meta page-url">
