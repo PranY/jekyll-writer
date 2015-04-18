@@ -292,14 +292,18 @@ a {
 }
 
 .navigation {
-  font-size: 1.25em;
+  font-size: 1.15em;
   list-style: none;
   margin: 0 0 10px;
   padding: 0;
 
   @include flexbox;
   @include flex-direction();
-  @include justify-content(space-between);
+  @include justify-content(flex-start);
+  @media screen and (min-width: $small) {
+    @include justify-content(space-between);
+    font-size: 1.25em;
+  }
   @media screen and (min-width: $large) {
     @include justify-content(space-around);
   }
@@ -307,9 +311,9 @@ a {
   a {
     text-decoration: none;
     display: block;
-    padding: .6em .8em;
+    padding: .6em .85em .8em .25em;
 
-    @media screen and (min-width: $medium) {
+    @media screen and (min-width: $small) {
       padding: .6em 1em;
     }
 
