@@ -24,8 +24,6 @@ Check out the [Archives] page to view all the posts.
 ## Images
 Images are enabled using the [octopress-image-tag] plugin.
 
-{% img post-image {{ site.baseurl }}/img/maine-snowstorm-12.jpg title:"Maine Snowstorm" %}
-
 ## Quotes
 Quotes are enabled using the [octopress-quote-tag] plugin.
 
