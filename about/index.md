@@ -27,21 +27,11 @@ Images are enabled using the [octopress-image-tag] plugin.
 ## Quotes
 Quotes are enabled using the [octopress-quote-tag] plugin.
 
-{% quote author: "Cato the Elder" url:https://en.wikipedia.org/wiki/Cato_the_Elder "Cato the Elder" %}
-Cum dubia et fragilis sit nobis vita tributa, in morte alterius spem to tibi ponere noli.
-{% endquote %}
 
 ## Pull Quotes
 Pull Quotes are enabled using the [octopress-pullquote-tag] plugin. (Disabled on smaller
 screen sizes.)
 
-{% pullquote %}
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-himenaeos. Nam nec ante. {" Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing
-diam, a cursus ipsum ante quis turpis. "} Nulla facilisi. Ut fringilla. Suspendisse potenti.
-Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam.
-Etiam ultrices. Suspendisse in justo eu magna luctus suscipit.
-{% endpullquote %}
 
 ## Code
 Jekyll also offers powerful support for code snippets:
