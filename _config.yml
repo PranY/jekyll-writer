@@ -18,8 +18,8 @@ sass:
   sass_dir: _sass
   style: :compressed
 
-markdown: rdiscount
-rdiscount:
+markdown: kramdown
+kramdown:
   extensions:
     - autolink
     - footnotes
